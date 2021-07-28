@@ -5,8 +5,13 @@ class Node {
   }
 
   setNextNode(node) {
-    this.next = node;
-  }
+    if (node instanceof Node || node === null) {
+      this.next = node;
+    } else {
+      throw new Error('not a node');
+    }
+  };
+
 }
 
 const firstNode = new Node('I am an instance of a Node!');
