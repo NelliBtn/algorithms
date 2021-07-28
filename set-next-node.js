@@ -10,7 +10,11 @@ class Node {
     } else {
       throw new Error('not a node');
     }
-  };
+  }
+
+  getNextNode() {
+    return this.next;
+  }
 
 }
 
