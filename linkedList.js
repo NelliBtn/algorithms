@@ -24,6 +24,15 @@ class LinkedList {
       tail.setNextNode(new Node(data)); // when iteration is over, the tail equals a new node with data arg
     }
   }
+
+  removeHead() {
+    const removedHead = this.head;
+    if (!removedHead) { // if no head list is empty
+      return;
+    }
+    this.head = this.head.getNextNode(); // set head to the next node
+    return removedHead.data; // return original head DATA
+  }
 }
 
 
