@@ -12,6 +12,18 @@ class LinkedList {
       newHead.setNextNode(currentHead);
     }
   }
+
+  addToTail(data) {
+    let tail = this.head;
+    if (!tail) {
+      this.head = new Node(data)
+    } else {
+      while (tail.getNextNode()) {
+        tail = tail.getNextNode();
+      }
+      tail.setNextNode(new Node(data));
+    }
+  }
 }
 
 
