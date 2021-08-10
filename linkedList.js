@@ -9,7 +9,7 @@ class LinkedList {
     const currentHead = this.head;
     this.head = newHead;
     if (currentHead) {
-      newHead.setNextNode(currentHead);
+      this.head.setNextNode(currentHead);
     }
   }
 
