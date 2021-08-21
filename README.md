@@ -1,6 +1,6 @@
 # algorithms
 
-## DATA STRUCTURES, ALGORITHMS, 
+## DATA STRUCTURES, ALGORITHMS AND COMMON COMPUTER SCIENCE CONCEPTS
 
 Learning and advancing knowledge of:
 
